@@ -28,7 +28,7 @@
 
     #input {
         height: 50px;
-        width: 100%;
+        width: 85%;
         outline: none;
         border:none;
         border-radius: 5px;
@@ -36,6 +36,16 @@
         color: rgb(0, 0, 0);
         padding: 0 10px;
         margin: 15px 0;
+        font-size: 11px;
+    }
+
+    button {
+        height: 50px;
+        width: 30px;
+        border: none;
+        background-color:#7c7c7c;
+        border-radius: 5px;
+        cursor: pointer;
     }
 
     #input::placeholder{

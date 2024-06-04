@@ -6,31 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/8b4c763476.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
     <title>Lista de Tarefas</title>
 </head>
 <body>
     <div class="container">
-        <input type="text" placeholder="Aperte Enter para adicionar a tarefa" id="input" ;">
+        <input type="text" placeholder="Aperte Enter para adicionar a tarefa" id="input" maxlength="20" ;">
+        <button type="submit" id="button"<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></button>
         <ul>
         </ul>
     </div>
-
-    <script>
-        $(document).ready(function(){
-            $('#input').change(function(){
-                    var input = $(this).val();
-                    $('ul').append('<li>' + input + '<i class="fas fa-check"></i> <i class="fas fa-trash"></i> </li>');
-                    $(this).val('');
-                });
-                $('ul').on('click','.fa-trash', function(){
-                    $(this).parent('li').fadeOut(200);
-                });
-                $('ul').on('click','.fa-check', function(){
-                    $(this).parent('li').toggleClass('checked');
-                });
-            });
-    </script>
 </body>
 <footer>
     <p>&copy; 2024 William Peixinho &nbsp;<a class="fa-brands fa-github fa-bounce" style="font-size: 18px; text-decoration: none; color: rgb(184, 184, 184);" href="https://github.com/williampeixinho"></a></p>
